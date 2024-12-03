@@ -1,3 +1,5 @@
-<p>
-wall works!
-</p>
+<div>
+  <ng-container *ngFor="let post of ds.posts">
+    <app-post [post]="post"></app-post>
+  </ng-container>
+</div>

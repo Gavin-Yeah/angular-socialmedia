@@ -1,8 +1,13 @@
-<form>
+<form [formGroup]="form">
   <fieldset>
     <legend>Login</legend>
-    <input placeholder="Username">
-    <input placeholder="Password" type="password">
+    <input placeholder="Username" formControlName="username" name="username" />
+    <input
+      placeholder="Password"
+      type="password"
+      formControlName="password"
+      name="password"
+    />
     <button>Login</button>
   </fieldset>
 </form>
